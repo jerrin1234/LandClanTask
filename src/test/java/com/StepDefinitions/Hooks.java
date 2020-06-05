@@ -19,9 +19,9 @@ public void start() {
 	 driver.manage().getCookies();
 }
 
-//@After
-//public void close() {
-//	driver.close();
-//}
+@After
+public void destroy() {
+	driver.close();
+}
 
 }

@@ -18,4 +18,8 @@ public void verify_Add_New_User_popup_window() {
 	public void verify_the_new_user_added() {
 		Assert.assertEquals("Selenium", driver.findElement(By.cssSelector("#row_3_txtSurname")).getText());  
 	}
+	
+	public void verify_new_user_country_code_should_appear_along_with_the_other_details() {
+		Assert.assertEquals("TV", driver.findElement(By.cssSelector("#row_3_txtCountry")).getText());
+	}
 }

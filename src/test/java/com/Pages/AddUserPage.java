@@ -1,5 +1,7 @@
 package com.Pages;
 import java.util.Map;
+
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import com.CucumberRunner.BaseClass;
@@ -28,5 +30,13 @@ public void enter_all_valid_credentials(DataTable newUserDetailsTable) {
 }
 public void click_on_save_Button() {
 	driver.findElement(By.cssSelector("#btnSave")).click();
+}
+
+public void verify_United_Kingdom_selected_as_default() {
+	Assert.assertEquals("United Kingdom", driver.findElement(By.cssSelector("option[value='225: Object']")).getText()); 
+}
+public void select_country() {
+	 Select countryDropDdown = new Select(driver.findElement(By.cssSelector("#ddlCountry")));
+	 countryDropDdown.selectByIndex(220);
 }
 }

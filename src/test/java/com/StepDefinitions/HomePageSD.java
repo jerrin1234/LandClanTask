@@ -23,7 +23,10 @@ public class HomePageSD extends BaseClass{
 	public void the_new_user_should_add() throws Throwable {
 		homePage.verify_the_new_user_added();
 	}
-
+	@Then("^The new user country code should appear along with the other details$")
+	public void the_new_user_country_code_should_appear_along_with_the_other_details() throws Throwable {
+		 
+	}
 
 
 }

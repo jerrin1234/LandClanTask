@@ -36,7 +36,10 @@ public class AddUserPageSD extends BaseClass {
 	public void i_select_country() throws Throwable {
 		addUserPage.select_country();
 	}
-
+	@When("^I change the address of the user$")
+	public void i_change_the_address_of_the_user(DataTable addressDetails) throws Throwable {
+		addUserPage.change_the_address_of_the_user(addressDetails);	
+	}
 	
 
 

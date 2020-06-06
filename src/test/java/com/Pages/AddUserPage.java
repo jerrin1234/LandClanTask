@@ -39,4 +39,13 @@ public void select_country() {
 	 Select countryDropDdown = new Select(driver.findElement(By.cssSelector("#ddlCountry")));
 	 countryDropDdown.selectByIndex(220);
 }
+public void change_the_address_of_the_user(DataTable addressDetails) {
+	Map<String,String> newAddress = addressDetails.asMap(String.class, String.class);
+	String addressValue = newAddress.get("Address");
+	String postcodevalue = newAddress.get("Post Code");
+	driver.findElement(By.cssSelector("#txtAddress")).clear();
+    driver.findElement(By.cssSelector("#txtAddress")).sendKeys(addressValue);
+    driver.findElement(By.cssSelector("#txtPostCode")).clear();
+    driver.findElement(By.cssSelector("#txtPostCode")).sendKeys(postcodevalue);
+}
 }

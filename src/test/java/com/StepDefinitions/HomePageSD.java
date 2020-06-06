@@ -1,18 +1,8 @@
 package com.StepDefinitions;
-import static org.junit.Assert.assertTrue;
-
-import java.util.Map;
-
-import org.junit.Assert;
-import org.openqa.selenium.By;
-
 import com.CucumberRunner.BaseClass;
-
-import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
 
 public class HomePageSD extends BaseClass{
 	@Given("^I am in homepage$")

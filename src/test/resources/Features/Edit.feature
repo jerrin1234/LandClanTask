@@ -1,5 +1,5 @@
 Feature: Edit
-@Regression
+
 Scenario: Verify the functionality of edit button
 
 Given I am in homepage

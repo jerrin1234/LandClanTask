@@ -1,8 +1,4 @@
 package com.StepDefinitions;
-import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
-
 import com.CucumberRunner.BaseClass;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;

@@ -1,15 +1,12 @@
 package com.StepDefinitions;
-
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import com.CucumberRunner.BaseClass;
-
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
 public class Hooks extends BaseClass{
+//Starting Of the Program
 String BaseURL = "http://localhost:8080/testcase/";
-
 @Before
 public void start() {
 	System.setProperty("webdriver.chrome.driver", "/Users/jerrinkottavilarajan/Documents/LandClanLtd/LandClanTask/src/test/resources/Drivers/chromedriver");
@@ -18,10 +15,10 @@ public void start() {
 	 driver.manage().window().maximize();
 	 driver.manage().getCookies();
 }
-//
-//@After
-//public void destroy() {
-//	driver.close();
-//}
+
+@After
+public void destroy() {
+driver.close();
+}
 
 }

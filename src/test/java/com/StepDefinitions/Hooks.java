@@ -18,10 +18,10 @@ public void start() {
 	 driver.manage().window().maximize();
 	 driver.manage().getCookies();
 }
-
-@After
-public void destroy() {
-	driver.close();
-}
+//
+//@After
+//public void destroy() {
+//	driver.close();
+//}
 
 }
